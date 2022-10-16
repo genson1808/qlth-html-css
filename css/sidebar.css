@@ -1,0 +1,41 @@
+.sidebar {
+  width: 100%;
+  background-color: var(--bgc-menu-sidebar);
+  flex: 1;
+}
+
+.sidebar .active {
+  border-left: 4px solid var(--active-sidebar);
+  background-color: var(--bgc-active-menu-sidebar);
+  color: var(--active-sidebar);
+}
+
+.menu-item {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  border-left: 4px;
+  border-style: solid;
+  border-color: transparent;
+  padding-left: 8px;
+  color: #fff;
+}
+.menu-item:hover {
+  cursor: pointer;
+}
+.menu-item .menu-icon {
+  width: 32px;
+  height: 32px;
+}
+.menu-item .menu-icon .icon {
+  width: 100%;
+  height: 100%;
+}
+.menu-item .menu-text {
+  margin-left: 11px;
+}
+.menu-item .toggle {
+  display: none;
+}

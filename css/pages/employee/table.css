@@ -1,0 +1,174 @@
+/*.table-content {*/
+/*  flex: 1;*/
+/*  margin: 0 16px 0 16px;*/
+/*  overflow: auto;*/
+/*}*/
+/*.table-scroll {*/
+/*  overflow: auto;*/
+/*  !* overflow: overlay; *!*/
+
+/*  max-height: calc(100vh - 172px);*/
+/*}*/
+
+/*::-webkit-scrollbar {*/
+/*  width: 0px;*/
+/*}*/
+
+/*.table-content table {*/
+/*  width: 100%;*/
+/*  border-collapse: collapse;*/
+/*  !* overflow: auto; *!*/
+/*  max-height: calc(100vh - 172px);*/
+/*}*/
+
+/*.table-content table td {*/
+/*  border: 1px solid var(--line-gridpanel-color);*/
+/*  height: 100%;*/
+/*  !* min-width: 120px; *!*/
+/*}*/
+
+/*.table-content td:first-child {*/
+/*  border-left: 1px solid transparent;*/
+/*  min-width: 50px;*/
+/*}*/
+
+/*.table-content td:last-child {*/
+/*  border-right: 1px solid transparent;*/
+/*  min-width: 80px;*/
+/*}*/
+
+/*.table-content table thead {*/
+/*  height: 40px;*/
+/*  background-color: var(--header-gridpanel-color);*/
+/*  font-family: OpenSans Semibold;*/
+/*  text-align: center;*/
+/*  position: sticky;*/
+/*  top: 0;*/
+/*}*/
+
+/*.table-content table thead tr td {*/
+/*  text-align: center;*/
+/*}*/
+
+/*.table-content table tbody tr {*/
+/*  height: 40px;*/
+/*}*/
+
+/*.table-content table tr td {*/
+/*  !* text-align: left; *!*/
+/*  vertical-align: middle;*/
+/*}*/
+
+
+
+.data-checked {
+  display: block;
+  background-image: url(../../../assets/Icons/ic_Check.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.btn-action-wrapper {
+  width: 48px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-action {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-edit {
+  background-image: url(../../../assets/Icons/ic_Edit.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.btn-remove {
+  background-image: url(../../../assets/Icons/ic_Remove.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.btn-remove:hover {
+  background-image: url(../../../assets/Icons/ic_Remove_Hover.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.btn-action:hover {
+  cursor: pointer;
+}
+
+.outer-wrapper {
+  height: calc(100% - 172px);
+  flex: 1;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.table-wrapper {
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+.table-data {
+  border: 1px solid black;
+  border-collapse: collapse;
+  min-width: max-content;
+  width: 100%;
+}
+
+.table-data thead {
+  height: 40px;
+
+  background-color: var(--header-gridpanel-color);
+  font-family: OpenSans Semibold;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+.table-data thead tr {
+  border-top: 1px solid var(--line-gridpanel-color);
+  border-bottom: 1px solid var(--line-gridpanel-color);
+}
+
+.table-data thead tr td {
+  text-align: center;
+}
+
+.table-data td {
+  border: 1px solid var(--line-gridpanel-color);
+  height: 100%;
+  /* min-width: 120px; */
+}
+
+.table-data td:first-child {
+  border-left: 1px solid transparent;
+  min-width: 50px;
+}
+
+.table-data td:last-child {
+  border-right: 1px solid transparent;
+  min-width: 80px;
+}
+
+
+.table-data tbody tr {
+  height: 40px;
+}
+
+.table-data tr td {
+  /* text-align: left; */
+  vertical-align: middle;
+}
+
+.table-data tbody tr td {
+  padding: 0 8px;
+}
+

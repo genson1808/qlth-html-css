@@ -1,0 +1,8 @@
+.pointer:hover {
+  cursor: pointer;
+}
+
+.dl {
+  display: flex;
+  justify-content: center;
+}

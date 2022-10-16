@@ -1,0 +1,12 @@
+.btn {
+    min-width: 96px;
+    height: 32px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+}

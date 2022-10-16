@@ -1,0 +1,45 @@
+.logo-container {
+  width: 100%;
+  height: 59px;
+  background-color: #24344b;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.logo-container .header-logo {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  text-decoration: none;
+}
+
+.logo-container .header-logo .logo-icon {
+  background-image: url(../assets/Icons/ic_IconThietBi.svg);
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+}
+
+.logo-container .header-logo .logo-text {
+  margin-left: 8px;
+  font-size: 16px;
+  font-family: OpenSans Semibold;
+  color: #ffffff;
+}
+
+.logo-container .menu-toggle {
+  background-image: url(../assets/Icons/ic_sprites.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 50px;
+  height: 50px;
+}
+.logo-container .menu-toggle:hover {
+  cursor: pointer;
+}
+
+.logo-container .toggle {
+  display: none;
+}

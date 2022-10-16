@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="left-container">
+        <div class="logo-container">
+            <div class="header-logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">Thiết bị</div>
+            </div>
+            <div class="menu-toggle"></div>
+        </div>
+        <div class="sidebar">
+            <div class="menu-item">
+                <div class="menu-icon">
+                    <img class="icon" src="./assets/Icons/ic_TongQuan.svg" alt=""/>
+                </div>
+                <div class="menu-text">Tổng quan</div>
+            </div>
+            <div class="menu-item active">
+                <div class="menu-icon">
+                    <img class="icon" src="./assets/Icons/ic_ThietBi.svg" alt=""/>
+                </div>
+                <div class="menu-text">Thiết bị</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">
+                    <img class="icon" src="./assets/Icons/ic_MuonTra.svg" alt=""/>
+                </div>
+                <div class="menu-text">Mượn trả</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">
+                    <img class="icon" src="./assets/Icons/ic_BaoCao.svg" alt=""/>
+                </div>
+                <div class="menu-text">Báo cáo</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">
+                    <img class="icon" src="./assets/Icons/ic_HeThong.svg" alt=""/>
+                </div>
+                <div class="menu-text">Hệ thống</div>
+            </div>
+        </div>
+    </div>
+    <div class="right-container">
+        <header class="header">
+            <div class="navbar">
+                <div class="navbar-nav navbar-nav-left">
+                    <h1 class="nav-title">Cán bộ,giáo viên</h1>
+                    <div class="header-help pointer"></div>
+                </div>
+                <div class=".navbar-nav navbar-nav-right">
+                    <div class="user-info-container">
+                        <div class="notify">
+                            <div class="notify-alert"></div>
+                        </div>
+                        <span class="user-name">Admin</span>
+                        <div class="icon-dropdown"></div>
+                        <div class="avatar">
+                            <img src="assets/Icons/ic_Avatar_36.png" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content-wrapper">
+            <div class="content">
+                <div class="top-toolbar">
+                    <div class="toolbar-left">
+                        <div class="search">
+                            <input type="text" class="input-search">
+                            <div class="search-icon"></div>
+                        </div>
+                    </div>
+                    <div class="toolbar-right dflex">
+                        <div class="btn btn-add">Thêm</div>
+                        <div class="btn btn-export">Xuất khẩu</div>
+                        <div class="more-action pointer"></div>
+                    </div>
+                </div>
+
+                <div class="outer-wrapper">
+                    <div class="table-wrapper">
+                        <table class="table-data">
+                            <thead>
+                            <tr>
+<!--                                <td><input type="checkbox" name="select-empl"></td>-->
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input" class="checkbox__input">
+                                        <label for="checkbox__input" class="checkbox__label"></label>
+                                    </div>
+                                </td>
+                                <td>Số hiệu cán bộ</td>
+                                <td>Họ và tên</td>
+                                <td>Số điện thoại</td>
+                                <td>Tổ chuyên môn</td>
+                                <td>Quản lý thiết bị môn</td>
+                                <td>Quản lý kho - phòng</td>
+                                <td>Đào tạo QLTB</td>
+                                <td>Đang làm việc</td>
+                                <td></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input1" class="checkbox__input">
+                                        <label for="checkbox__input1" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00001</td>
+                                <td>NGUYỄN MINH HẢI</td>
+                                <td>0354534566</td>
+                                <td>Tổ Toán - Tin</td>
+                                <td>Toán</td>
+                                <td>Phòng tin học</td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input2" class="checkbox__input">
+                                        <label for="checkbox__input2" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV0000111</td>
+                                <td>fsdf</td>
+                                <td>0354534567</td>
+                                <td>Tổ Lý</td>
+                                <td>Lý</td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input3" class="checkbox__input">
+                                        <label for="checkbox__input3" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00002</td>
+                                <td>Ý NHI</td>
+                                <td>0354534568</td>
+                                <td>Tổ Hóa - Sinh</td>
+                                <td></td>
+                                <td>Phòng hóa - sinh</td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input4" class="checkbox__input">
+                                        <label for="checkbox__input4" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00003</td>
+                                <td>DƯƠNG KIM SANH</td>
+                                <td>0354534569</td>
+                                <td>Tổ Anh - Văn</td>
+                                <td>Anh, Văn</td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input5" class="checkbox__input">
+                                        <label for="checkbox__input5" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00004</td>
+                                <td>HỒNG SON</td>
+                                <td>0354534570</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input6" class="checkbox__input">
+                                        <label for="checkbox__input6" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00005</td>
+                                <td>HUỲNH THỊ NHI</td>
+                                <td>0354534571</td>
+                                <td>Tổ Lý</td>
+                                <td>Lý</td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input7" class="checkbox__input">
+                                        <label for="checkbox__input7" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00006</td>
+                                <td>TRỌNG NGHĨA</td>
+                                <td>0354534572</td>
+                                <td></td>
+                                <td></td>
+                                <td>Kho thiết bị chung</td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input8" class="checkbox__input">
+                                        <label for="checkbox__input8" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00007</td>
+                                <td>LÊ QUỐC BẢO</td>
+                                <td>0354534573</td>
+                                <td>Tổ Anh - Văn</td>
+                                <td>Anh, Văn</td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input9" class="checkbox__input">
+                                        <label for="checkbox__input9" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00008</td>
+                                <td>TRẦN THANH HƯƠNG</td>
+                                <td>0354534574</td>
+                                <td>Tổ Toán - Tin</td>
+                                <td>Toán</td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input10" class="checkbox__input">
+                                        <label for="checkbox__input10" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00009</td>
+                                <td>NGUYỄN THỊ PHƯƠNG HUY</td>
+                                <td>0354534575</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input11" class="checkbox__input">
+                                        <label for="checkbox__input11" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00010</td>
+                                <td>THẢO THU NGÂN</td>
+                                <td>0354534576</td>
+                                <td>Tổ Hóa - Sinh</td>
+                                <td></td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input12" class="checkbox__input">
+                                        <label for="checkbox__input12" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00011</td>
+                                <td>Chị Bê</td>
+                                <td>0354534577</td>
+                                <td></td>
+                                <td>Anh, Văn</td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input13" class="checkbox__input">
+                                        <label for="checkbox__input13" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00012</td>
+                                <td>LÊ LINH</td>
+                                <td>0354534578</td>
+                                <td>Tổ Toán - Tin</td>
+                                <td>Toán</td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input14" class="checkbox__input">
+                                        <label for="checkbox__input14" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00013</td>
+                                <td>Khuất Kim Thùy</td>
+                                <td>0354534579</td>
+                                <td>Tổ Lý</td>
+                                <td></td>
+                                <td>Phòng lý</td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input15" class="checkbox__input">
+                                        <label for="checkbox__input15" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>NV00014</td>
+                                <td>Võ Văn Nhân</td>
+                                <td>0354534580</td>
+                                <td>Tổ Hóa - Sinh</td>
+                                <td>Hóa, Sinh</td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input16" class="checkbox__input">
+                                        <label for="checkbox__input16" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>QL00001</td>
+                                <td>HUỲNH THỊ THANH HẰNG</td>
+                                <td>0354534581</td>
+                                <td></td>
+                                <td>Anh, Văn</td>
+                                <td></td>
+                                <td class="center"><span></span></td>
+                                <td class="center"><span></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox_input" id="checkbox__input17" class="checkbox__input">
+                                        <label for="checkbox__input17" class="checkbox__label"></label>
+                                    </div>
+                                </td>                                <td>QL00002</td>
+                                <td>HUỲNH THỊ THANH HOA</td>
+                                <td>0354534582</td>
+                                <td>Tổ Toán - Tin</td>
+                                <td></td>
+                                <td></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td class="center"><span class="data-checked"></span></td>
+                                <td>
+                                    <div class="btn-action-wrapper">
+                                        <div class="btn-action btn-edit"></div>
+                                        <div class="btn-action btn-remove"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="footer-content">
+                    <div class="paging-control">
+                        <div class="btn-paging btn-first-page pointer"></div>
+                        <div class="btn-paging btn-prev-page pointer"></div>
+                        <input type="text" class="page-number" value="1">
+                        <div class="btn-paging btn-next-page pointer"></div>
+                        <div class="btn-paging btn-last-page pointer"></div>
+                        <div class="paging-info">
+                        <span>
+                            1/2 trang
+                        </span>
+                            <span>
+                            (56 giáo viên)
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="js/main.js"/>
+</body>
+</html>
