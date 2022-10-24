@@ -8,8 +8,7 @@
 }
 .content .top-toolbar .toolbar-left .search {
   position: relative;
-  max-width: 300px;
-  min-width: 100px;
+  min-width: 300px;
   height: 32px;
 }
 .content .top-toolbar .toolbar-left .search .input-search {
@@ -36,16 +35,16 @@
 .content .top-toolbar .toolbar-right .more-action {
   width: 32px;
   height: 32px;
-  background: url(../../../assets/Icons/ic_More.png) no-repeat center;
-  border: 1px solid var(--line-gridpanel-color);
+  background-image: url(../../../assets/Icons/ic_More.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
   border-radius: 4px;
 }
 .content .top-toolbar .toolbar-right .btn-add {
-  background-color: var(--main-color);
   margin-right: 8px;
-  color: #fff;
 }
+
 .content .top-toolbar .toolbar-right .btn-export {
-  border: 1px solid var(--line-gridpanel-color);
   margin-right: 8px;
 }

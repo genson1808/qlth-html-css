@@ -6,11 +6,13 @@
 @import url(../css/sidebar.css);
 @import url(../css/header-logo.css);
 @import url(../css/header-navbar.css);
-@import url(pages/employee/employee.css);
-@import url(components/dialog.css);
+@import url(./pages/employee/employee.css);
+@import url(./components/dialog.css);
+
 :root {
   --main-color: #03ae66;
   --bgc-menu-sidebar: #24344b;
+  --btn-green-hover: #02bf70;
   --bgc-active-menu-sidebar: #404f64;
   --active-sidebar: #0dd469;
   --line-gridpanel-color: #d5d8e6;
