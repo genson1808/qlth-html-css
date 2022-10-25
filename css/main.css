@@ -9,6 +9,7 @@
 @import url(./pages/employee/employee.css);
 @import url(./components/dialog.css);
 @import url(./components/dropdown.css);
+@import url(./components/toast.css);
 
 :root {
   --main-color: #03ae66;

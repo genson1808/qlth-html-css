@@ -136,7 +136,7 @@ label.required::after {
 
 .input {
   height: 32px;
-  pd: 0 12px;
+  padding: 0 12px;
 }
 
 .input:focus {
