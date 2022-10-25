@@ -1,0 +1,82 @@
+.drop-down {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 200px;
+}
+
+.drop-down .selected a {
+  background: #fff no-repeat scroll right center;
+  display: block;
+  padding-right: 20px;
+  border: 1px solid var(--line-gridpanel-color);
+  width: 100%;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.drop-down .selected a span {
+  cursor: pointer;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px;
+  color: #000;
+}
+
+.drop-down .option {
+  position: relative;
+}
+
+.toggle-dropdown {
+  background: url("../../assets/Icons/ic_chevron2.svg") no-repeat;
+  background-position: center;
+  width: 21px;
+  height: 17px;
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  cursor: pointer;
+}
+
+.drop-down .options ul {
+  background: #fff none repeat scroll 0 0;
+  display: none;
+  list-style: none;
+  padding: 0px 0px;
+  position: absolute;
+  left: 0px;
+  top: 32px;
+  width: auto;
+  min-width: 100%;
+  border: 1px solid var(--line-gridpanel-color);
+  border-radius: 4px;
+  margin-top: 8px;
+  height: 180px;
+  overflow: auto;
+
+  box-shadow: 0px 0px 8px 1px rgb(224 224 224);
+  -webkit-box-shadow: 0px 0px 8px 1px rgb(224 224 224);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(224, 224, 224, 1);
+}
+
+.drop-down .selected span.value,
+.drop-down .options span.value {
+  display: none;
+}
+
+.drop-down .options ul li a {
+  height: 32px;
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.drop-down .options ul li a:hover {
+  background: #ceebdc;
+  transition: 0.2s ease;
+}
