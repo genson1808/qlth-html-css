@@ -96,6 +96,34 @@ $(document).ready(function () {
         if (!$clicked.parents().hasClass("drop-down")) $(".drop-down .options ul").hide();
     });
 
+    $(document).on(
+        "click",
+        '.table-data thead  input[type="checkbox"]',
+        function (e) {
+            let allCheckbox = $('.table-data tbody .checkbox input[type="checkbox"]')
+            if ($(this).is(":checked")) {
+                allCheckbox.each(function () {
+                    $(this).prop("checked", true);
+                });
+            } else {
+                allCheckbox.each(function () {
+                    $(this).prop("checked", false);
+                });
+            }
+        }
+    );
+
+    $(document).on(
+        "click",
+        '.table-data tbody input[type="checkbox"]',
+        function (e) {
+            let checkAll = $('.table-data thead  input[type="checkbox"]')
+            if (checkAll) {
+                checkAll.prop("checked", false);
+            }
+        }
+    );
+
 
     // show loading
     setTimeout(function () {
