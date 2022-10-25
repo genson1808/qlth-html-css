@@ -510,8 +510,9 @@
     </div>
   </div>
 
-  <div class="dialog">
+  <div class="dialog hide-dialog">
     <div class="dialog__body">
+
       <div class="wrapper__left">
         <div class="body__left">
           <div class="img-box">
@@ -525,270 +526,868 @@
         </div>
       </div>
       <div class="body__right">
-        <div class="title">Thêm hồ sơ cán bộ, giáo viên</div>
-        <div class="form-wrapper">
-          <div class="item1 input-stack">
-            <div class="wrap-label">
-              <label for="code-ip" class="required">Số hiệu cán bộ</label>
+          <div class="title">Thêm hồ sơ cán bộ, giáo viên</div>
+          <div class="form-wrapper">
+            <div class="form-stack-1 input-stack">
+              <div class="wrap-label">
+                <label for="code-ip" class="required">Số hiệu cán bộ</label>
+              </div>
+              <input type="text" class="input input--rounded medium--input" id="code-ip" />
             </div>
-            <input type="text" class="input input--rounded medium--input" id="code-ip" />
+            <div class="form-stack-2 input-stack">
+              <div class="wrap-label">
+                <label for="user-name-ip" class="required">Họ và tên</label>
+              </div>
+              <input type="text" class="input input--rounded medium--input" id="user-name-ip" />
+            </div>
+            <div class="form-stack-3 input-stack">
+              <div class="wrap-label">
+                <label for="phone-ip">Số điện thoại</label>
+              </div>
+              <input type="text" class="input input--rounded medium--input" id="phone-ip" />
+            </div>
+            <div class="form-stack-4 input-stack">
+              <div class="wrap-label">
+                <label for="email-ip">Email</label>
+              </div>
+              <input type="text" class="input input--rounded medium--input" id="email-ip" />
+            </div>
+            <div class="form-stack-5 input-stack">
+              <div class="wrap-label">
+                <label title="Tổ bộ môn">Tổ bộ môn</label>
+              </div>
+
+              <div class="drop-down">
+                <div class="selected">
+                  <a href="#"><span></span></a>
+                </div>
+                <div class="toggle-dropdown"></div>
+                <div class="options">
+                  <ul>
+                    <li><a href="#">User1<span class="value">1</span></a></li>
+                    <li><a href="#">User2<span class="value">2</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="form-stack-6 input-stack">
+              <div class="wrap-label">
+                <label title="Quản lý theo môn">QL theo môn</label>
+              </div>
+              <div class="multiselect" id="subjects">
+                <dl class="combobox">
+
+                  <dt>
+                    <div class="selected-container">
+                      <!-- <span class="hida">Select</span> -->
+                      <p class="multiSel">
+                      <div class="toggle-combobox"></div>
+
+                      </p>
+                    </div>
+                  </dt>
+                  <!-- <div class="show"> show</div> -->
+                  <!-- <div class="toggle-combobox"></div> -->
+
+                  <dd>
+                    <div class="mutliSelect">
+                      <ul>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Tất cả" name="checkbox_input" id="checkbox_0"
+                              class="checkbox__input" />
+                            <label for="checkbox_0" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Tất cả
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Toán" name="checkbox_input" id="checkbox_1"
+                              class="checkbox__input" />
+                            <label for="checkbox_1" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Toán
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Lý" name="checkbox_input" id="checkbox_2"
+                              class="checkbox__input" />
+                            <label for="checkbox_2" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Lý
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Hoá" name="checkbox_input" id="checkbox_3"
+                              class="checkbox__input" />
+                            <label for="checkbox_3" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Hoá
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Sinh" name="checkbox_input" id="checkbox_4"
+                              class="checkbox__input" />
+                            <label for="checkbox_4" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Sinh
+                            </span>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Sử" name="checkbox_input" id="checkbox_5"
+                              class="checkbox__input" />
+                            <label for="checkbox_5" class="checkbox__label"></label>
+                            <span class="cb-value">
+
+                              Sử
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Địa" name="checkbox_input" id="checkbox_6"
+                              class="checkbox__input" />
+                            <label for="checkbox_6" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Địa
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Ngữ văn" name="checkbox_input" id="checkbox_7"
+                              class="checkbox__input" />
+                            <label for="checkbox_7" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Ngữ văn
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+
+            <div class="form-stack-7 input-stack">
+              <div class="wrap-label">
+                <label title="Quản lý kho, phòng">QL kho, phòng</label>
+              </div>
+              <div class="multiselect" id="rooms">
+                <dl class="combobox">
+
+                  <dt>
+                    <div class="selected-container">
+                      <p class="multiSel">
+                      <div class="toggle-combobox"></div>
+
+                      </p>
+                    </div>
+                  </dt>
+
+                  <dd>
+                    <div class="mutliSelect">
+                      <ul>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Tất cả" name="checkbox_input" id="checkbox_8"
+                              class="checkbox__input" />
+                            <label for="checkbox_8" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Tất cả
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Thể dục" name="checkbox_input" id="checkbox_9"
+                              class="checkbox__input" />
+                            <label for="checkbox_9" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Thể dục
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Vật lý" name="checkbox_input" id="checkbox_10"
+                              class="checkbox__input" />
+                            <label for="checkbox_10" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Vật lý
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Hoá học" name="checkbox_input" id="checkbox_11"
+                              class="checkbox__input" />
+                            <label for="checkbox_11" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Hoá học
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="form-stack-8 input-stack">
+              <div class="checkbox">
+                <input type="checkbox" value="Trình độ nghiệp vụ QLTB" name="checkbox_input" id="checkbox_12"
+                  class="checkbox__input" />
+                <label for="checkbox_12" title="Trình độ nghiệp vụ quản lý thiết bị" class="checkbox__label"></label>
+                <span class="cb-value ml-8">
+                  Trình độ nghiệp vụ QLTB
+                </span>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" value="Đang làm việc" name="checkbox_input" id="checkbox_13"
+                  class="checkbox__input" />
+                <label for="checkbox_13" title="Đang làm việc" class="checkbox__label"></label>
+                <span class="cb-value ml-8">
+                  Đang làm việc
+                </span>
+              </div>
+              <div>
+                <div>
+                  <label for="checkbox_14" title="Đang làm việc" class="checkbox__label"></label>
+                  <span class="cb-value mr-8">
+                    Ngày nghỉ việc
+                  </span>
+                  <input type="date" id="checkbox_14">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-stack-9 input-stack">
+              <div class="btn btn--white mr-8 btn__close--dialog">Đóng</div>
+              <div class="btn btn--green mr-0">Lưu</div>
+            </div>
           </div>
-          <div class="item2 input-stack">
-            <div class="wrap-label">
-              <label for="user-name-ip" class="required">Họ và tên</label>
+
+        </div>
+        <div class="edit__employee--dialog hide-dialog">
+          <div class="title">Chỉnh sửa hồ sơ cán bộ, giáo viên</div>
+          <div class="form-wrapper">
+            <div class="form-stack-1 input-stack">
+              <div class="wrap-label">
+                <label for="code-ip" class="required">Số hiệu cán bộ</label>
+              </div>
+              <input type="text" class="input input--rounded medium--input" id="code-ip" />
             </div>
-            <input type="text" class="input input--rounded medium--input" id="user-name-ip" />
-          </div>
-          <div class="item3 input-stack">
-            <div class="wrap-label">
-              <label for="phone-ip">Số điện thoại</label>
+            <div class="form-stack-2 input-stack">
+              <div class="wrap-label">
+                <label for="user-name-ip" class="required">Họ và tên</label>
+              </div>
+              <input type="text" class="input input--rounded medium--input" id="user-name-ip" />
             </div>
-            <input type="text" class="input input--rounded medium--input" id="phone-ip" />
-          </div>
-          <div class="item4 input-stack">
-            <div class="wrap-label">
-              <label for="email-ip">Email</label>
+            <div class="form-stack-3 input-stack">
+              <div class="wrap-label">
+                <label for="phone-ip">Số điện thoại</label>
+              </div>
+              <input type="text" class="input input--rounded medium--input" id="phone-ip" />
             </div>
-            <input type="text" class="input input--rounded medium--input" id="email-ip" />
-          </div>
-          <div class="item5 input-stack">
-            <div class="wrap-label">
-
-              <label for="email-ip">Email</label>
+            <div class="form-stack-4 input-stack">
+              <div class="wrap-label">
+                <label for="email-ip">Email</label>
+              </div>
+              <input type="text" class="input input--rounded medium--input" id="email-ip" />
             </div>
-            <input type="text" class="input input--rounded medium--input" id="email-ip" />
-          </div>
-          <div class="item6 input-stack">
-            <div class="wrap-label">
-              <label title="Quản lý theo môn">QL theo môn</label>
+            <div class="form-stack-5 input-stack">
+              <div class="wrap-label">
+                <label title="Tổ bộ môn">Tổ bộ môn</label>
+              </div>
+
+              <div class="drop-down">
+                <div class="selected">
+                  <a href="#"><span></span></a>
+                </div>
+                <div class="toggle-dropdown"></div>
+                <div class="options">
+                  <ul>
+                    <li><a href="#">User1<span class="value">1</span></a></li>
+                    <li><a href="#">User2<span class="value">2</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                    <li><a href="#">User3<span class="value">3</span></a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="multiselect" id="subjects">
-              <dl class="dropdown">
+            <div class="form-stack-6 input-stack">
+              <div class="wrap-label">
+                <label title="Quản lý theo môn">QL theo môn</label>
+              </div>
+              <div class="multiselect" id="subjects">
+                <dl class="combobox">
 
-                <dt>
-                  <div class="selected-container">
-                    <!-- <span class="hida">Select</span> -->
-                    <p class="multiSel">
-                    <div class="toggle-dropdown"></div>
+                  <dt>
+                    <div class="selected-container">
+                      <!-- <span class="hida">Select</span> -->
+                      <p class="multiSel">
+                      <div class="toggle-combobox"></div>
 
-                    </p>
-                  </div>
-                </dt>
-                <!-- <div class="show"> show</div> -->
-                <!-- <div class="toggle-dropdown"></div> -->
+                      </p>
+                    </div>
+                  </dt>
+                  <!-- <div class="show"> show</div> -->
+                  <!-- <div class="toggle-combobox"></div> -->
 
-                <dd>
-                  <div class="mutliSelect">
-                    <ul>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Tất cả" name="checkbox_input" id="checkbox_0"
-                            class="checkbox__input" />
-                          <label for="checkbox_0" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Tất cả
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Toán" name="checkbox_input" id="checkbox_1"
-                            class="checkbox__input" />
-                          <label for="checkbox_1" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Toán
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Lý" name="checkbox_input" id="checkbox_2"
-                            class="checkbox__input" />
-                          <label for="checkbox_2" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Lý
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Hoá" name="checkbox_input" id="checkbox_3"
-                            class="checkbox__input" />
-                          <label for="checkbox_3" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Hoá
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Sinh" name="checkbox_input" id="checkbox_4"
-                            class="checkbox__input" />
-                          <label for="checkbox_4" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Sinh
-                          </span>
-                        </div>
-                      </li>
+                  <dd>
+                    <div class="mutliSelect">
+                      <ul>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Tất cả" name="checkbox_input" id="checkbox_0"
+                              class="checkbox__input" />
+                            <label for="checkbox_0" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Tất cả
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Toán" name="checkbox_input" id="checkbox_1"
+                              class="checkbox__input" />
+                            <label for="checkbox_1" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Toán
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Lý" name="checkbox_input" id="checkbox_2"
+                              class="checkbox__input" />
+                            <label for="checkbox_2" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Lý
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Hoá" name="checkbox_input" id="checkbox_3"
+                              class="checkbox__input" />
+                            <label for="checkbox_3" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Hoá
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Sinh" name="checkbox_input" id="checkbox_4"
+                              class="checkbox__input" />
+                            <label for="checkbox_4" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Sinh
+                            </span>
+                          </div>
+                        </li>
 
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Sử" name="checkbox_input" id="checkbox_5"
-                            class="checkbox__input" />
-                          <label for="checkbox_5" class="checkbox__label"></label>
-                          <span class="cb-value">
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Sử" name="checkbox_input" id="checkbox_5"
+                              class="checkbox__input" />
+                            <label for="checkbox_5" class="checkbox__label"></label>
+                            <span class="cb-value">
 
-                            Sử
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Địa" name="checkbox_input" id="checkbox_6"
-                            class="checkbox__input" />
-                          <label for="checkbox_6" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Địa
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Ngữ văn" name="checkbox_input" id="checkbox_7"
-                            class="checkbox__input" />
-                          <label for="checkbox_7" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Ngữ văn
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </dd>
-              </dl>
+                              Sử
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Địa" name="checkbox_input" id="checkbox_6"
+                              class="checkbox__input" />
+                            <label for="checkbox_6" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Địa
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Ngữ văn" name="checkbox_input" id="checkbox_7"
+                              class="checkbox__input" />
+                            <label for="checkbox_7" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Ngữ văn
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
             </div>
-          </div>
 
 
-          <div class="item7 input-stack">
-            <div class="wrap-label">
-              <label title="Quản lý kho, phòng">QL kho, phòng</label>
+            <div class="form-stack-7 input-stack">
+              <div class="wrap-label">
+                <label title="Quản lý kho, phòng">QL kho, phòng</label>
+              </div>
+              <div class="multiselect" id="rooms">
+                <dl class="combobox">
+
+                  <dt>
+                    <div class="selected-container">
+                      <p class="multiSel">
+                      <div class="toggle-combobox"></div>
+
+                      </p>
+                    </div>
+                  </dt>
+
+                  <dd>
+                    <div class="mutliSelect">
+                      <ul>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Tất cả" name="checkbox_input" id="checkbox_8"
+                              class="checkbox__input" />
+                            <label for="checkbox_8" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Tất cả
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Thể dục" name="checkbox_input" id="checkbox_9"
+                              class="checkbox__input" />
+                            <label for="checkbox_9" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Thể dục
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Vật lý" name="checkbox_input" id="checkbox_10"
+                              class="checkbox__input" />
+                            <label for="checkbox_10" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Vật lý
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input type="checkbox" value="Hoá học" name="checkbox_input" id="checkbox_11"
+                              class="checkbox__input" />
+                            <label for="checkbox_11" class="checkbox__label"></label>
+                            <span class="cb-value">
+                              Hoá học
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
             </div>
-            <div class="multiselect" id="rooms">
-              <dl class="dropdown">
 
-                <dt>
-                  <div class="selected-container">
-                    <!-- <span class="hida">Select</span> -->
-                    <p class="multiSel">
-                    <div class="toggle-dropdown"></div>
+            <div class="form-stack-8 input-stack">
+              <div class="checkbox">
+                <input type="checkbox" value="Trình độ nghiệp vụ QLTB" name="checkbox_input" id="checkbox_12"
+                  class="checkbox__input" />
+                <label for="checkbox_12" title="Trình độ nghiệp vụ quản lý thiết bị" class="checkbox__label"></label>
+                <span class="cb-value ml-8">
+                  Trình độ nghiệp vụ QLTB
+                </span>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" value="Đang làm việc" name="checkbox_input" id="checkbox_13"
+                  class="checkbox__input" />
+                <label for="checkbox_13" title="Đang làm việc" class="checkbox__label"></label>
+                <span class="cb-value ml-8">
+                  Đang làm việc
+                </span>
+              </div>
+              <div>
+                <div>
+                  <label for="checkbox_14" title="Đang làm việc" class="checkbox__label"></label>
+                  <span class="cb-value mr-8">
+                    Ngày nghỉ việc
+                  </span>
+                  <input type="date" id="checkbox_14">
+                </div>
+              </div>
+            </div>
 
-                    </p>
-                  </div>
-                </dt>
-                <!-- <div class="show"> show</div> -->
-                <!-- <div class="toggle-dropdown"></div> -->
-
-                <dd>
-                  <div class="mutliSelect">
-                    <ul>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Tất cả" name="checkbox_input" id="checkbox_0"
-                            class="checkbox__input" />
-                          <label for="checkbox_0" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Tất cả
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Toán" name="checkbox_input" id="checkbox_1"
-                            class="checkbox__input" />
-                          <label for="checkbox_1" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Toán
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Lý" name="checkbox_input" id="checkbox_2"
-                            class="checkbox__input" />
-                          <label for="checkbox_2" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Lý
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Hoá" name="checkbox_input" id="checkbox_3"
-                            class="checkbox__input" />
-                          <label for="checkbox_3" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Hoá
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Sinh" name="checkbox_input" id="checkbox_4"
-                            class="checkbox__input" />
-                          <label for="checkbox_4" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Sinh
-                          </span>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Sử" name="checkbox_input" id="checkbox_5"
-                            class="checkbox__input" />
-                          <label for="checkbox_5" class="checkbox__label"></label>
-                          <span class="cb-value">
-
-                            Sử
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Địa" name="checkbox_input" id="checkbox_6"
-                            class="checkbox__input" />
-                          <label for="checkbox_6" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Địa
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input type="checkbox" value="Ngữ văn" name="checkbox_input" id="checkbox_7"
-                            class="checkbox__input" />
-                          <label for="checkbox_7" class="checkbox__label"></label>
-                          <span class="cb-value">
-                            Ngữ văn
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </dd>
-              </dl>
+            <div class="form-stack-9 input-stack">
+              <div class="btn btn--white mr-8 btn__close--dialog">Đóng</div>
+              <div class="btn btn--green mr-0">Lưu</div>
             </div>
           </div>
 
         </div>
       </div>
+
+      <div class="close--dialog"></div>
     </div>
+
   </div>
   </div>
 
   <!-- <script src="js/combobox.js" /> -->
   <script type="module" src="js/main.js" />
+</body>
+
+</html>
+<div class="btn-action btn-edit"></div>
+<div class="btn-action btn-remove"></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="footer-content">
+  <div class="paging-control">
+    <div class="btn-paging btn-first-page pointer"></div>
+    <div class="btn-paging btn-prev-page pointer"></div>
+    <input type="text" class="page-number" value="1" />
+    <div class="btn-paging btn-next-page pointer"></div>
+    <div class="btn-paging btn-last-page pointer"></div>
+    <div class="paging-info">
+      <span> 1/2 trang </span>
+      <span> (56 giáo viên) </span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dialog hide-dialog">
+  <div class="dialog__body">
+
+    <div class="wrapper__left">
+      <div class="body__left">
+        <div class="img-box">
+          <img src="assets/Icons/default_avatar.png" alt="" />
+        </div>
+        <div class="btn-upload">Chọn ảnh</div>
+        <div class="info-box">
+          <h4 class="fullname">Họ và tên</h4>
+          <h5 class="code">SHC001</h5>
+        </div>
+      </div>
+    </div>
+    <div class="body__right">
+      <div class="title">Thêm hồ sơ cán bộ, giáo viên</div>
+      <div class="form-wrapper">
+        <div class="form-stack-1 input-stack">
+          <div class="wrap-label">
+            <label for="code-ip" class="required">Số hiệu cán bộ</label>
+          </div>
+          <input type="text" class="input input--rounded medium--input" id="code-ip" />
+        </div>
+        <div class="form-stack-2 input-stack">
+          <div class="wrap-label">
+            <label for="user-name-ip" class="required">Họ và tên</label>
+          </div>
+          <input type="text" class="input input--rounded medium--input" id="user-name-ip" />
+        </div>
+        <div class="form-stack-3 input-stack">
+          <div class="wrap-label">
+            <label for="phone-ip">Số điện thoại</label>
+          </div>
+          <input type="text" class="input input--rounded medium--input" id="phone-ip" />
+        </div>
+        <div class="form-stack-4 input-stack">
+          <div class="wrap-label">
+            <label for="email-ip">Email</label>
+          </div>
+          <input type="text" class="input input--rounded medium--input" id="email-ip" />
+        </div>
+        <div class="form-stack-5 input-stack">
+          <div class="wrap-label">
+            <label title="Tổ bộ môn">Tổ bộ môn</label>
+          </div>
+
+          <div class="drop-down">
+            <div class="selected">
+              <a href="#"><span></span></a>
+            </div>
+            <div class="toggle-dropdown"></div>
+            <div class="options">
+              <ul>
+                <li><a href="#">User1<span class="value">1</span></a></li>
+                <li><a href="#">User2<span class="value">2</span></a></li>
+                <li><a href="#">User3<span class="value">3</span></a></li>
+                <li><a href="#">User3<span class="value">3</span></a></li>
+                <li><a href="#">User3<span class="value">3</span></a></li>
+                <li><a href="#">User3<span class="value">3</span></a></li>
+                <li><a href="#">User3<span class="value">3</span></a></li>
+                <li><a href="#">User3<span class="value">3</span></a></li>
+                <li><a href="#">User3<span class="value">3</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="form-stack-6 input-stack">
+          <div class="wrap-label">
+            <label title="Quản lý theo môn">QL theo môn</label>
+          </div>
+          <div class="multiselect" id="subjects">
+            <dl class="combobox">
+
+              <dt>
+                <div class="selected-container">
+                  <!-- <span class="hida">Select</span> -->
+                  <p class="multiSel">
+                  <div class="toggle-combobox"></div>
+
+                  </p>
+                </div>
+              </dt>
+              <!-- <div class="show"> show</div> -->
+              <!-- <div class="toggle-combobox"></div> -->
+
+              <dd>
+                <div class="mutliSelect">
+                  <ul>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Tất cả" name="checkbox_input" id="checkbox_0"
+                          class="checkbox__input" />
+                        <label for="checkbox_0" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Tất cả
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Toán" name="checkbox_input" id="checkbox_1"
+                          class="checkbox__input" />
+                        <label for="checkbox_1" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Toán
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Lý" name="checkbox_input" id="checkbox_2"
+                          class="checkbox__input" />
+                        <label for="checkbox_2" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Lý
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Hoá" name="checkbox_input" id="checkbox_3"
+                          class="checkbox__input" />
+                        <label for="checkbox_3" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Hoá
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Sinh" name="checkbox_input" id="checkbox_4"
+                          class="checkbox__input" />
+                        <label for="checkbox_4" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Sinh
+                        </span>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Sử" name="checkbox_input" id="checkbox_5"
+                          class="checkbox__input" />
+                        <label for="checkbox_5" class="checkbox__label"></label>
+                        <span class="cb-value">
+
+                          Sử
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Địa" name="checkbox_input" id="checkbox_6"
+                          class="checkbox__input" />
+                        <label for="checkbox_6" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Địa
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Ngữ văn" name="checkbox_input" id="checkbox_7"
+                          class="checkbox__input" />
+                        <label for="checkbox_7" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Ngữ văn
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+
+        <div class="form-stack-7 input-stack">
+          <div class="wrap-label">
+            <label title="Quản lý kho, phòng">QL kho, phòng</label>
+          </div>
+          <div class="multiselect" id="rooms">
+            <dl class="combobox">
+
+              <dt>
+                <div class="selected-container">
+                  <p class="multiSel">
+                  <div class="toggle-combobox"></div>
+
+                  </p>
+                </div>
+              </dt>
+
+              <dd>
+                <div class="mutliSelect">
+                  <ul>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Tất cả" name="checkbox_input" id="checkbox_8"
+                          class="checkbox__input" />
+                        <label for="checkbox_8" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Tất cả
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Thể dục" name="checkbox_input" id="checkbox_9"
+                          class="checkbox__input" />
+                        <label for="checkbox_9" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Thể dục
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Vật lý" name="checkbox_input" id="checkbox_10"
+                          class="checkbox__input" />
+                        <label for="checkbox_10" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Vật lý
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox">
+                        <input type="checkbox" value="Hoá học" name="checkbox_input" id="checkbox_11"
+                          class="checkbox__input" />
+                        <label for="checkbox_11" class="checkbox__label"></label>
+                        <span class="cb-value">
+                          Hoá học
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="form-stack-8 input-stack">
+          <div class="checkbox">
+            <input type="checkbox" value="Trình độ nghiệp vụ QLTB" name="checkbox_input" id="checkbox_12"
+              class="checkbox__input" />
+            <label for="checkbox_12" title="Trình độ nghiệp vụ quản lý thiết bị" class="checkbox__label"></label>
+            <span class="cb-value ml-8">
+              Trình độ nghiệp vụ QLTB
+            </span>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value="Đang làm việc" name="checkbox_input" id="checkbox_13"
+              class="checkbox__input" />
+            <label for="checkbox_13" title="Đang làm việc" class="checkbox__label"></label>
+            <span class="cb-value ml-8">
+              Đang làm việc
+            </span>
+          </div>
+          <div>
+            <div>
+              <label for="checkbox_14" title="Đang làm việc" class="checkbox__label"></label>
+              <span class="cb-value mr-8">
+                Ngày nghỉ việc
+              </span>
+              <input type="date" id="checkbox_14">
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="form-stack-9 input-stack">
+          <div class="btn btn--white mr-8">Đóng</div>
+          <div class="btn btn--green mr-0">Lưu</div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="close--dialog"></div>
+  </div>
+
+</div>
+</div>
+
+<!-- <script src="js/combobox.js" /> -->
+<script type="module" src="js/main.js" />
 </body>
 
 </html>

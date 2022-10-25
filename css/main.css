@@ -8,6 +8,7 @@
 @import url(../css/header-navbar.css);
 @import url(./pages/employee/employee.css);
 @import url(./components/dialog.css);
+@import url(./components/dropdown.css);
 
 :root {
   --main-color: #03ae66;
