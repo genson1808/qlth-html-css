@@ -4,13 +4,14 @@
 @import url(../css/components/button.css);
 @import url(../css/components/dialog.css);
 @import url(../css/sidebar.css);
-@import url(../css/header-logo.css);
-@import url(../css/header-navbar.css);
+@import url(header_logo.css);
+@import url(header_navbar.css);
 @import url(./pages/employee/employee.css);
 @import url(./components/dialog.css);
 @import url(./components/dropdown.css);
 @import url(./components/toast.css);
 @import url(./components/loading.css);
+@import url(./pages/no_data.css);
 
 :root {
   --main-color: #03ae66;
