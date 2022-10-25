@@ -638,6 +638,12 @@ $(document).ready(function () {
         if (!$clicked.parents().hasClass("drop-down")) $(".drop-down .options ul").hide();
     });
 
+
+    // show loading
+    setTimeout(function (){
+        $(".wrapper-loading").addClass('d-none')
+    }, 1500)
+
     var multi = new Multiselect("#subjects");
     var multi2 = new Multiselect("#rooms");
 
