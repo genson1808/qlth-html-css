@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="left-container">
+        <div class="logo-container">
+            <div class="header-logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">Thiết bị</div>
+            </div>
+            <div class="menu-toggle"></div>
+        </div>
+        <div class="sidebar">
+            <div class="menu-item">
+                <div class="menu-icon">
+                    <img class="icon" src="./assets/Icons/ic_TongQuan.svg" alt=""/>
+                </div>
+                <div class="menu-text">Tổng quan</div>
+            </div>
+            <div class="menu-item active">
+                <div class="menu-icon">
+                    <img class="icon" src="./assets/Icons/ic_ThietBi.svg" alt=""/>
+                </div>
+                <div class="menu-text">Thiết bị</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">
+                    <img class="icon" src="./assets/Icons/ic_MuonTra.svg" alt=""/>
+                </div>
+                <div class="menu-text">Mượn trả</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">
+                    <img class="icon" src="./assets/Icons/ic_BaoCao.svg" alt=""/>
+                </div>
+                <div class="menu-text">Báo cáo</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">
+                    <img class="icon" src="./assets/Icons/ic_HeThong.svg" alt=""/>
+                </div>
+                <div class="menu-text">Hệ thống</div>
+            </div>
+        </div>
+    </div>
+    <div class="right-container">
+        <header class="header">
+            <div class="navbar">
+                <div class="navbar-nav navbar-nav-left">
+                    <h1 class="nav-title">Cán bộ,giáo viên</h1>
+                    <div class="header-help pointer"></div>
+                </div>
+                <div class=".navbar-nav navbar-nav-right">
+                    <div class="user-info-container">
+                        <div class="notify pointer">
+                            <div class="notify-alert"></div>
+                        </div>
+                        <span class="user-name pointer">Admin</span>
+                        <div class="icon-dropdown pointer"></div>
+                        <div class="avatar pointer">
+                            <img src="assets/Icons/ic_Avatar_36.png" alt="avatar"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content-wrapper">
+            <div class="content">
+                <div class="no-data">
+                    <div class="icon"></div>
+                    <div class="data-content">
+                        <h5 class="title">Chưa có giáo viên</h5>
+                        <span class="info">Vui lòng chọn thêm mới từng giáo viên hoặc Nhập khẩu để lấy danh sách hiện có tại trường.</span>
+                    </div>
+                    <div class="g-btn">
+                        <div class="btn btn--green">Thêm mới</div>
+                        <div class="btn btn--green">Nhập khẩu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dialog hide-dialog">
+    <div class="dialog__body">
+
+        <div class="wrapper__left">
+            <div class="body__left">
+                <div class="img-box">
+                    <img src="assets/Icons/default_avatar.png" alt=""/>
+                </div>
+                <div class="btn-upload">Chọn ảnh</div>
+                <div class="info-box">
+                    <h4 class="fullname">Họ và tên</h4>
+                    <h5 class="code">SHC001</h5>
+                </div>
+            </div>
+        </div>
+        <div class="body__right">
+        </div>
+        <div class="close--dialog"></div>
+
+    </div>
+</div>
+
+</div>
+</div>
+
+<div id="toasts">
+</div>
+
+<div class="wrapper-loading">
+    <div class="loading">
+        <div class="wrapper-wave">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="loading-text">Đang tải</div>
+    </div>
+</div>
+
+<!-- <script src="js/combobox.js" /> -->
+<script type="module" src="js/main.js"/>
+</body>
